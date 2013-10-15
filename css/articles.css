@@ -1,0 +1,12 @@
+article {
+    background-color: azure;
+}
+article > h1 {
+    color: red;
+}
+article > p {
+    border: 5px solid black;
+}
+article > small {
+    font-style: italic;
+}

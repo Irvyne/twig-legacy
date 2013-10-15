@@ -1,0 +1,14 @@
+article {
+    background-color: darkred;
+}
+article > h1 {
+    color: yellow;
+    font-size: 3em;
+}
+article > p {
+    border: 15px solid black;
+}
+article > small {
+    font-style: italic;
+    color: green;
+}

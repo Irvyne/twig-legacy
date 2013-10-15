@@ -1,0 +1,19 @@
+{% extends 'Blog/blog.html.twig' %}
+
+{% block content %}
+    <article>
+        <h1>{{ article.title|upper }}</h1>
+        <p>{{ article.content }}</p>
+        <small>{{ article.date }}</small>
+    </article>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="css/article.css" rel="stylesheet">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js">
+{% endblock %}

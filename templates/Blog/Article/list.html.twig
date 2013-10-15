@@ -1,0 +1,25 @@
+{% extends 'Blog/blog.html.twig' %}
+
+{% block content %}
+    {% for article in articles %}
+        <article>
+            <h1>{{ article.title }}</h1>
+            <p>{{ article.content }}</p>
+            <small>{{ article.date }}</small>
+        </article>
+    {% endfor %}
+{% endblock %}
+
+{% block sidebar %}
+    <h2>Catégories</h2>
+    <ul>
+        <li>PHP</li>
+        <li>Html</li>
+        <li>Twig</li>
+    </ul>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="css/articles.css" rel="stylesheet">
+{% endblock %}
